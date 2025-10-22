@@ -1,0 +1,66 @@
+.contact-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url('background-image.jpeg');
+  height: 100vh;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  animation: zoomAndSwitch 12s infinite ease-in-out;
+}
+@keyframes zoomAndSwitch {
+  0% {
+    background-image: url('background-image.jpeg'); 
+    transform: scale(1);
+  }
+  51% {
+    background-image: url('background-image.jpeg');
+    transform: scale(1.1); 
+  }
+  51% {
+    background-image: url('background-image2.jpeg'); 
+    transform: scale(1.1);
+  }
+  100% {
+    background-image: url('background-image2.jpeg'); 
+    transform: scale(1); 
+  }
+}
+
+.contact-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  line-height: 2.8;
+}
+
+.contact-container a {
+  color: rgba(0, 0, 0, 0.947);
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+.marquee-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+.marquee-overlay h1 {
+  font-size: 36px;
+  white-space: nowrap;
+  color: #333;
+}
