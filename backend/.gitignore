@@ -1,0 +1,34 @@
+# Maven build output
+target/
+*.jar
+*.war
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Environment and log files
+.env
+*.log
+
+# Eclipse / Spring Tool Suite
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# Misc
+.DS_Store
+HELP.md
